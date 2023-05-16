@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .beginning{
+            text-align: center;
+        }
+        .frame{
+            border-style:solid;
+            border-color:rgb(109, 91, 108);
+            width: 300px;
+            height: 600px;
+            margin: 10px 5px;
+            box-shadow: 0px 0px 2px 2px rgb(113, 112, 114)
+        }
+        .frame:hover{
+            box-shadow: 0px 0px 3px 3px green;
+        }
+        .up{
+            border-style:none;
+            background-color:rgb(236, 231, 232);
+            width: 300px;
+            height: 450px;
+            padding: -5px;
+            margin-top: 50px;
+            position: relative;
+            
+        }
+        .sale{
+            border-style: dotted;
+            border-radius: 250px;
+            border-color: rgb(255, 14, 14);
+            width: 50px;
+            line-height: 50px;
+            text-align: center;
+            color:rgb(255, 14, 14);
+            margin: 10px 10px;
+            position: absolute;
+            animation: transform linear 10s infinite;
+        }
+        @keyframes transform {
+            0% {
+                rotate: 0deg;
+            }
+            100% {
+                rotate: 360deg;
+            }
+        } 
+        .recomand{
+            width: 60px;
+            height: 20px;
+            border-radius: 50%;
+            text-align:center;
+            background-color:rgb(177, 156, 172);
+            margin-top:-20px;
+            margin-left: 10px;
+            padding: 20px 0px;
+            position: absolute;
+        }
+        .recomand:before{
+            content: "TOP";
+            color:white;
+        }
+        .heart{
+            position: absolute;
+            background: url(./image/ico-favorite.svg);
+            height: 30px;
+            width: 33px;
+            margin-left: 250px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .heart:hover{
+            background: url(./image/ico-favorite-2.svg)
+        }
+        .flower{
+            margin-top: -50px;
+            padding: 35px 0 0 0;
+        }
+        .fon-2{
+            background-color:white;
+            height: 50px;
+        }
+        .buy{
+            background-color:rgb(164, 141, 185);
+            display: table;
+            padding: 5px ;
+            width: 250px;
+            border-radius: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            font-size: 30px;
+            cursor: pointer;
+            transition:all 0.4s;
+            box-shadow:inset 1px 1px 2px 2px rgb(191, 175, 206)
+        }
+        .buy:hover{
+            background-color: rgb(112, 32, 64);
+            box-shadow: 5px 5px 0 0 black;
+        }
+        .buy:active{
+            background-color: blueviolet;
+            transition: all 0.1s;
+        }
+        .last{
+            text-align: center;
+            padding: 8px;
+            cursor: pointer;
+        }
+        .lt{
+            float: left;
+            margin-top: 10px;
+            margin-left: 10px;
+            color:mediumpurple;
+        }
+        .rt{
+            float: right;
+            padding: 10px 10px;
+            color: rgb(154, 152, 152);
+        }
+        .rt-2{
+            float: right;
+            margin: 10px -70px;
+            color: rgb(115, 61, 167);
+        }
+        .order{
+            padding-top: 40px;
+        }
+        .page{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="beginning">Товары</h1>
+    <div class="page">
+        <div class="frame">
+            <div class="up">
+                <div class="sale">-19%</div>
+                <div class="heart"></div>
+                <div class="flower">
+                    <img src="./image/product-1.png">
+                </div>
+                <div class="recomand"></div>
+            </div>
+            <div class="fon-2">
+                <div class="lt"><b>101 красная роза</b></div>
+                <div class="rt"><s>2800 грн</s></div><br>
+                <div class="rt-2"><b>2280 грн</b></div>
+                <div class="fon-2 order">
+                    <span class="buy">Заказать</span>
+                </div>
+                <div class="last">
+                    <u>быстрый заказ</u>
+               </div>
+            </div>
+        </div>
+        <div class="frame">
+            <div class="up">
+                <div class="sale">-19%</div>
+                <div class="heart"></div>
+                <div class="flower">
+                    <img src="./image/product-2.png">
+                </div>
+                <div class="recomand"></div>
+            </div>
+            <div class="fon-2">
+                <div class="lt"><b>101 красная роза</b></div>
+                <div class="rt"><s>2800 грн</s></div><br>
+                <div class="rt-2"><b class="color">2280 грн</b></div>
+                <div class="fon-2 order">
+                    <span class="buy">Заказать</span>
+                </div>
+                <div class="last">
+                    <u>быстрый заказ</u>
+               </div>
+            </div>
+        </div>
+        <div class="frame">
+            <div class="up">
+                <div class="sale">-19%</div>
+                <div class="heart"></div>
+                <div class="flower">
+                    <img src="./image/product-3.png">
+                </div>
+                <div class="recomand"></div>
+            </div>
+            <div class="fon-2">
+                <div class="lt"><b>101 красная роза</b></div>
+                <div class="rt"><s>2800 грн</s></div><br>
+                <div class="rt-2"><b class="color">2280 грн</b></div>
+                <div class="fon-2 order">
+                    <span class="buy">Заказать</span>
+                </div>
+                <div class="last">
+                    <u>быстрый заказ</u>
+               </div>
+            </div>
+        </div>
+    </div>
+        
+   
+</body>
+</html>
